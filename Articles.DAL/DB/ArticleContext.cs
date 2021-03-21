@@ -17,5 +17,12 @@ namespace Articles.DAL.DB
         {
             Database.EnsureCreated();
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Comment>()
+                .HasOne(c => c.Article)
+                .WithMany(a => a.Comments)
+                .HasForeignKey(c => c.ArticleId);
+        }
     }
 }

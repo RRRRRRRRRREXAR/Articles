@@ -15,14 +15,19 @@ namespace Articles.BLL.Profiles
         {
             CreateMap<Comment, CommentDTO>()
                 .ForMember(dest => dest.Article,
-                opts => opts.MapFrom(src => src.Article)).ReverseMap();
+                opts => opts.MapFrom(src => src.Article));
+            CreateMap<CommentDTO, Comment>()
+                .ForMember(dest => dest.Article,
+                opts => opts.MapFrom(src => src.Article))
+                .ForMember(dest => dest.ArticleId,
+                opts => opts.MapFrom(dest => dest.Article.Id));
             CreateMap<Article, ArticleDTO>()
                 .ForMember(dest => dest.Comments,
                 opts => opts.MapFrom(src => src.Comments)).ReverseMap();
         }
         public IMapper GetMapper()
         {
-            var config = new MapperConfiguration(cfg => new BllMapper());
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<BllMapper>());
             return config.CreateMapper();
         }
     }

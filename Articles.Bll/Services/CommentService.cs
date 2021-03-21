@@ -23,7 +23,9 @@ namespace Articles.BLL.Services
         }
         public async Task CreateComment(CommentDTO comment)
         {
-            await _uow.Repository<Comment>().Create(_mapper.Map<Comment>(comment));
+            var com = _mapper.Map<Comment>(comment);
+            com.Article = await _uow.Repository<Article>().Find(a => a.Id == com.ArticleId);
+            await _uow.Repository<Comment>().Create(com);
             await _uow.SaveAsync();
         }
 

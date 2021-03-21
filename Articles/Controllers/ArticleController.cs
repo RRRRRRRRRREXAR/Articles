@@ -37,7 +37,7 @@ namespace Articles.Controllers
         [HttpPost]
         public async Task Post([FromBody] ArticleModel model)
         {
-            await _articleService.CreateArticle(_mapper.Map<ArticleDTO>(model));
+            await _articleService.CreateArticle(_mapper.Map<ArticleModel, ArticleDTO>(model));
         }
     }
 }

@@ -12,5 +12,6 @@ namespace Articles.DAL.Entities
         public string Text { get; set; }
         public DateTime Date { get; set;}
         public Article Article { get; set; }
+        public int ArticleId { get; set; }
     }
 }

@@ -26,7 +26,7 @@ namespace Articles.Controllers
             _mapper = profile.GetMapper();
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{articleId}")]
         public async Task<IEnumerable<CommentModel>> Get(int articleId)
         {
             var result = await _commentService.GetComments(articleId);
@@ -37,7 +37,8 @@ namespace Articles.Controllers
         [HttpPost]
         public async Task Post([FromBody] CommentModel comment)
         {
-            await _commentService.CreateComment(_mapper.Map<CommentDTO>(comment));
+            var map = _mapper.Map<CommentDTO>(comment);
+            await _commentService.CreateComment(map);
         }
     }
 }

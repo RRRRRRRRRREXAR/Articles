@@ -14,12 +14,18 @@ namespace Articles.Profiles
         {
             CreateMap<ArticleDTO, ArticleModel>()
                 .ForMember(dest => dest.Comments,
-                opts => opts.MapFrom(src => src.Comments)).ReverseMap();
-            CreateMap<CommentDTO, CommentModel>().ReverseMap();
+                opts => opts.MapFrom(src => src.Comments))
+                .ForMember(dest => dest.Id,
+                opts => opts.MapFrom(src => src.Id))
+                .ReverseMap();
+            CreateMap<CommentDTO, CommentModel>()
+                .ForMember(dest => dest.Article,
+                opts => opts.MapFrom(src => src.Article))
+                .ReverseMap();
         }
         public IMapper GetMapper()
         {
-            var config = new MapperConfiguration(cfg => new PlMapper());
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<PlMapper>());
             return config.CreateMapper();
         }
     }
