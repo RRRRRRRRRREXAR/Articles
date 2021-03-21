@@ -25,6 +25,7 @@ namespace Articles.BLL.Services
         {
             var com = _mapper.Map<Comment>(comment);
             com.Article = await _uow.Repository<Article>().Find(a => a.Id == com.ArticleId);
+            com.Date = DateTime.Now;
             await _uow.Repository<Comment>().Create(com);
             await _uow.SaveAsync();
         }

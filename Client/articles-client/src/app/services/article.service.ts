@@ -1,9 +1,18 @@
-import { Injectable } from '@angular/core';
+import { Article } from "./../models/article";
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class ArticleService {
-
-  constructor() { }
+  ApiUrl = "https://localhost:44303/api/Article";
+  constructor(private http: HttpClient) {}
+  public GetArticles(): Observable<Article[]> {
+    return this.http.get<Article[]>(this.ApiUrl);
+  }
+  public CreateArticle(article: Article) {
+    this.http.post(this.ApiUrl, article);
+  }
 }

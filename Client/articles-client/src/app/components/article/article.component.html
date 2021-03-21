@@ -1,1 +1,10 @@
-<p>article works!</p>
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{article.text}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <app-comments [articleId] = "article.id"></app-comments>
+  </mat-card-content>
+
+</mat-card>

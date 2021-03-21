@@ -1,4 +1,4 @@
 export interface Article {
-  Id: number;
-  Text: string;
+  id: number;
+  text: string;
 }

@@ -29,14 +29,7 @@ namespace Articles
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(options =>
-            {
-                options.AddPolicy("CorsPolicy", builder => builder
-                .WithOrigins("http://localhost:4200")
-                .AllowAnyMethod()
-                .AllowAnyHeader()
-                .AllowCredentials());
-            });
+            
             services.AddTransient<PlMapper>();
             Container.RegisterServices(services, Configuration);
             services.AddControllers();
@@ -49,7 +42,14 @@ namespace Articles
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors(options =>
+            {
+                options
+                .WithOrigins("http://localhost:4200")
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials();
+            });
             app.UseHttpsRedirection();
 
             app.UseRouting();

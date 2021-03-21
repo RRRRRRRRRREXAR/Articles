@@ -6,11 +6,14 @@ import { Observable } from "rxjs";
   providedIn: "root",
 })
 export class CommentService {
-  ApiUrl = "https://localhost:44303/api/Article";
+  ApiUrl = "https://localhost:44303/api/Comment";
 
   constructor(private http: HttpClient) {}
 
-  GetComments(articleId: number): Observable<Comment[]> {
-    return this.http.get<Comment[]>(this.ApiUrl);
+  public GetComments(articleId: number): Observable<Comment[]> {
+    return this.http.get<Comment[]>(this.ApiUrl + "/" + articleId);
+  }
+  public CreateComment(comment: Comment) {
+    this.http.post(this.ApiUrl, comment);
   }
 }
