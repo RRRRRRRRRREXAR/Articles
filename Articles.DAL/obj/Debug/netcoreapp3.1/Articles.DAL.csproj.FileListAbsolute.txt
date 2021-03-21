@@ -1,0 +1,5 @@
+C:\Users\rabes\source\repos\Articles\Articles.DAL\bin\Debug\netcoreapp3.1\Articles.DAL.deps.json
+C:\Users\rabes\source\repos\Articles\Articles.DAL\bin\Debug\netcoreapp3.1\Articles.DAL.dll
+C:\Users\rabes\source\repos\Articles\Articles.DAL\obj\Debug\netcoreapp3.1\Articles.DAL.csprojAssemblyReference.cache
+C:\Users\rabes\source\repos\Articles\Articles.DAL\obj\Debug\netcoreapp3.1\Articles.DAL.AssemblyInfoInputs.cache
+C:\Users\rabes\source\repos\Articles\Articles.DAL\obj\Debug\netcoreapp3.1\Articles.DAL.AssemblyInfo.cs

@@ -1,0 +1,17 @@
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\bin\Debug\net5.0\Articles.DAL.dll
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\obj\Debug\net5.0\Articles.CompositionRoot.csprojAssemblyReference.cache
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\obj\Debug\net5.0\Articles.CompositionRoot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\obj\Debug\net5.0\Articles.CompositionRoot.AssemblyInfoInputs.cache
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\obj\Debug\net5.0\Articles.CompositionRoot.AssemblyInfo.cs
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\bin\Debug\net5.0\Articles.BLL.dll
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\obj\Debug\net5.0\Articles.CompositionRoot.csproj.CoreCompileInputs.cache
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\bin\Debug\net5.0\Articles.CompositionRoot.deps.json
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\bin\Debug\net5.0\Articles.CompositionRoot.dll
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\bin\Debug\net5.0\ref\Articles.CompositionRoot.dll
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\bin\Debug\net5.0\Articles.CompositionRoot.pdb
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\bin\Debug\net5.0\Articles.BLL.pdb
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\bin\Debug\net5.0\Articles.DAL.pdb
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\obj\Debug\net5.0\Articles.CompositionRoot.csproj.CopyComplete
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\obj\Debug\net5.0\Articles.CompositionRoot.dll
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\obj\Debug\net5.0\ref\Articles.CompositionRoot.dll
+C:\Users\rabes\source\repos\Articles\Articles.CompositionRoot\obj\Debug\net5.0\Articles.CompositionRoot.pdb

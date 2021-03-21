@@ -1,0 +1,15 @@
+C:\Users\rabes\source\repos\Articles\Articles.BLL\bin\Debug\net5.0\Articles.BLL.deps.json
+C:\Users\rabes\source\repos\Articles\Articles.BLL\bin\Debug\net5.0\Articles.BLL.dll
+C:\Users\rabes\source\repos\Articles\Articles.BLL\bin\Debug\net5.0\ref\Articles.BLL.dll
+C:\Users\rabes\source\repos\Articles\Articles.BLL\bin\Debug\net5.0\Articles.BLL.pdb
+C:\Users\rabes\source\repos\Articles\Articles.BLL\bin\Debug\net5.0\Articles.DAL.dll
+C:\Users\rabes\source\repos\Articles\Articles.BLL\bin\Debug\net5.0\Articles.DAL.pdb
+C:\Users\rabes\source\repos\Articles\Articles.BLL\obj\Debug\net5.0\Articles.BLL.csprojAssemblyReference.cache
+C:\Users\rabes\source\repos\Articles\Articles.BLL\obj\Debug\net5.0\Articles.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rabes\source\repos\Articles\Articles.BLL\obj\Debug\net5.0\Articles.BLL.AssemblyInfoInputs.cache
+C:\Users\rabes\source\repos\Articles\Articles.BLL\obj\Debug\net5.0\Articles.BLL.AssemblyInfo.cs
+C:\Users\rabes\source\repos\Articles\Articles.BLL\obj\Debug\net5.0\Articles.BLL.csproj.CoreCompileInputs.cache
+C:\Users\rabes\source\repos\Articles\Articles.BLL\obj\Debug\net5.0\Articles.BLL.csproj.CopyComplete
+C:\Users\rabes\source\repos\Articles\Articles.BLL\obj\Debug\net5.0\Articles.BLL.dll
+C:\Users\rabes\source\repos\Articles\Articles.BLL\obj\Debug\net5.0\ref\Articles.BLL.dll
+C:\Users\rabes\source\repos\Articles\Articles.BLL\obj\Debug\net5.0\Articles.BLL.pdb

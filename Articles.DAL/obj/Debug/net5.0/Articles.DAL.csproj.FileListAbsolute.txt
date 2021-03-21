@@ -1,0 +1,12 @@
+C:\Users\rabes\source\repos\Articles\Articles.DAL\bin\Debug\net5.0\Articles.DAL.deps.json
+C:\Users\rabes\source\repos\Articles\Articles.DAL\bin\Debug\net5.0\Articles.DAL.dll
+C:\Users\rabes\source\repos\Articles\Articles.DAL\bin\Debug\net5.0\ref\Articles.DAL.dll
+C:\Users\rabes\source\repos\Articles\Articles.DAL\bin\Debug\net5.0\Articles.DAL.pdb
+C:\Users\rabes\source\repos\Articles\Articles.DAL\obj\Debug\net5.0\Articles.DAL.csprojAssemblyReference.cache
+C:\Users\rabes\source\repos\Articles\Articles.DAL\obj\Debug\net5.0\Articles.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rabes\source\repos\Articles\Articles.DAL\obj\Debug\net5.0\Articles.DAL.AssemblyInfoInputs.cache
+C:\Users\rabes\source\repos\Articles\Articles.DAL\obj\Debug\net5.0\Articles.DAL.AssemblyInfo.cs
+C:\Users\rabes\source\repos\Articles\Articles.DAL\obj\Debug\net5.0\Articles.DAL.csproj.CoreCompileInputs.cache
+C:\Users\rabes\source\repos\Articles\Articles.DAL\obj\Debug\net5.0\Articles.DAL.dll
+C:\Users\rabes\source\repos\Articles\Articles.DAL\obj\Debug\net5.0\ref\Articles.DAL.dll
+C:\Users\rabes\source\repos\Articles\Articles.DAL\obj\Debug\net5.0\Articles.DAL.pdb
