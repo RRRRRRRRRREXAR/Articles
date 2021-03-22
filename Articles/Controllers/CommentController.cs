@@ -35,10 +35,10 @@ namespace Articles.Controllers
 
         // POST api/<CommentController>
         [HttpPost]
-        public async Task Post([FromBody] CommentModel comment)
+        public async Task<CommentModel> Post([FromBody] AddCommentModel comment)
         {
-            var map = _mapper.Map<CommentDTO>(comment);
-            await _commentService.CreateComment(map);
+            var commentDTO = _mapper.Map<CommentDTO>(comment);
+            return _mapper.Map<CommentModel>(await _commentService.CreateComment(commentDTO));
         }
     }
 }

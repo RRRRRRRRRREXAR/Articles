@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace Articles.Models
 {
-    public class ArticleModel
+    public class AddArticle
     {
-        public int Id { get; set; }
         public string Text { get; set; }
     }
 }

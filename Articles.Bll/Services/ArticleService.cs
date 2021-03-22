@@ -21,10 +21,11 @@ namespace Articles.BLL.Services
             _uow = uow;
             _mapper = mapper.GetMapper();
         }
-        public async Task CreateArticle(ArticleDTO article)
+        public async Task<ArticleDTO> CreateArticle(ArticleDTO article)
         {
             await _uow.Repository<Article>().Create(_mapper.Map<Article>(article));
             await _uow.SaveAsync();
+            return article;
         }
 
         public async Task<IEnumerable<ArticleDTO>> GetArticles()

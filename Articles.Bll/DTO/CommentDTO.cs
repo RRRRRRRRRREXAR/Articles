@@ -13,5 +13,6 @@ namespace Articles.BLL.DTO
         public string Text { get; set; }
         public DateTime Date { get; set; }
         public ArticleDTO Article { get; set; }
+        public int ArticleId { get; set; }
     }
 }

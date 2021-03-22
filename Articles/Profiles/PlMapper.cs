@@ -13,15 +13,14 @@ namespace Articles.Profiles
         public PlMapper()
         {
             CreateMap<ArticleDTO, ArticleModel>()
-                .ForMember(dest => dest.Comments,
-                opts => opts.MapFrom(src => src.Comments))
                 .ForMember(dest => dest.Id,
                 opts => opts.MapFrom(src => src.Id))
                 .ReverseMap();
             CreateMap<CommentDTO, CommentModel>()
-                .ForMember(dest => dest.Article,
-                opts => opts.MapFrom(src => src.Article))
+                .ForMember(dest => dest.ArticleId,
+                opts => opts.MapFrom(src => src.ArticleId))
                 .ReverseMap();
+            CreateMap<AddCommentModel, CommentDTO>().ReverseMap();
         }
         public IMapper GetMapper()
         {

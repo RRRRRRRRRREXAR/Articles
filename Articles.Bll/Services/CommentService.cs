@@ -21,13 +21,14 @@ namespace Articles.BLL.Services
             _uow = uow;
             _mapper = mapper.GetMapper();
         }
-        public async Task CreateComment(CommentDTO comment)
+        public async Task<CommentDTO> CreateComment(CommentDTO comment)
         {
             var com = _mapper.Map<Comment>(comment);
-            com.Article = await _uow.Repository<Article>().Find(a => a.Id == com.ArticleId);
+            com.Article = await _uow.Repository<Article>().Find(a => a.Id == comment.ArticleId);
             com.Date = DateTime.Now;
             await _uow.Repository<Comment>().Create(com);
             await _uow.SaveAsync();
+            return _mapper.Map<CommentDTO>(com);
         }
 
         public async Task<IEnumerable<CommentDTO>> GetComments(int articleId)

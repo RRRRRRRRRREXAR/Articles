@@ -1,0 +1,15 @@
+<form [formGroup]="commentForm" *ngIf="isVisible" (ngSubmit)="AddComment()" >
+  <button mat-button (click)="Reply()">Close</button>
+  <mat-form-field appearance="fill">
+    <mat-label>Username</mat-label>
+    <input formControlName="userName" matInput>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Text</mat-label>
+    <input matInput formControlName="text">
+  </mat-form-field>
+  <button mat-button type="submit" >Send</button>
+</form>
+<div *ngIf="!isVisible">
+  <button mat-button (click)="Reply()" >Reply</button>
+</div>

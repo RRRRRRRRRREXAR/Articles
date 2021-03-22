@@ -9,7 +9,7 @@ namespace Articles.BLL.Interfaces
 {
     public interface ICommentService
     {
-        Task CreateComment(CommentDTO comment);
+        Task<CommentDTO> CreateComment(CommentDTO comment);
         Task<IEnumerable<CommentDTO>> GetComments(int articleId);
     }
 }

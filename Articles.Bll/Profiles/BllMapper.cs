@@ -13,14 +13,11 @@ namespace Articles.BLL.Profiles
     {
         public BllMapper()
         {
-            CreateMap<Comment, CommentDTO>()
-                .ForMember(dest => dest.Article,
-                opts => opts.MapFrom(src => src.Article));
             CreateMap<CommentDTO, Comment>()
                 .ForMember(dest => dest.Article,
                 opts => opts.MapFrom(src => src.Article))
                 .ForMember(dest => dest.ArticleId,
-                opts => opts.MapFrom(dest => dest.Article.Id));
+                opts => opts.MapFrom(dest => dest.Article.Id)).ReverseMap();
             CreateMap<Article, ArticleDTO>()
                 .ForMember(dest => dest.Comments,
                 opts => opts.MapFrom(src => src.Comments)).ReverseMap();

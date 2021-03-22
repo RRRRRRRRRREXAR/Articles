@@ -1,3 +1,4 @@
+import { AddArticle } from './../models/addarticle';
 import { Article } from "./../models/article";
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
@@ -12,7 +13,7 @@ export class ArticleService {
   public GetArticles(): Observable<Article[]> {
     return this.http.get<Article[]>(this.ApiUrl);
   }
-  public CreateArticle(article: Article) {
-    this.http.post(this.ApiUrl, article);
+  public CreateArticle(article: AddArticle) {
+    return this.http.post(this.ApiUrl, article);
   }
 }

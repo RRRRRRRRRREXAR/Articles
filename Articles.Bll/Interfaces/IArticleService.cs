@@ -9,7 +9,7 @@ namespace Articles.BLL.Interfaces
 {
     public interface IArticleService
     {
-        Task CreateArticle(ArticleDTO article);
+        Task<ArticleDTO> CreateArticle(ArticleDTO article);
         Task<IEnumerable<ArticleDTO>> GetArticles(); 
     }
 }
